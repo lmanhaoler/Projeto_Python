@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Fundos de Investimento</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: #121212; 
+            color: #e0e0e0; 
+            padding: 20px; 
+        }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1 { 
+            text-align: center; 
+            color: #ffd700; 
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .card { 
+            background: #1e1e1e; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+            padding: 25px; 
+            margin-bottom: 25px; 
+            border: 1px solid #333;
+            border-top: 5px solid #ffd700; 
+        }
+        .card-title { 
+            font-size: 1.4rem; 
+            font-weight: bold; 
+            color: #ffd700;
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid #ffd700; 
+        }
+        .row { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 10px 0; 
+            border-bottom: 1px solid #2d2d2d; 
+        }
+        .row:last-child { border-bottom: none; }
+        .label { font-weight: bold; color: #a6a6a6; }
+        .value { color: #ffffff; text-align: right; }
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .chart-container {
+            text-align: center;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            margin-top: 25px;
+        }
+        .chart-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Dashboard de Investimentos</h1>
+        
+        <!-- Bloco do Gráfico Embutido -->
+        <div class="chart-container">
+            <div style="font-size: 1.2rem; font-weight: bold; color: #ffd700; margin-bottom: 15px; text-align: left; border-bottom: i1px solid #ffd700; padding-bottom: 5px;">📈 ANÁLISE DE EVOLUÇÃO DAS COTAS</div>
+            <img src="grafico_cotas.png" alt="Gráfico de Evolução das Cotas">
+        </div>
+        <br>
+
+        <!-- Bloco do Fundo 1 -->
+        <div class="card">
+            <div class="card-title">🏢 XP SELECTION FII</div>
+            <div class="row"><span class="label">CNPJ Fundo:</span><span class="value">30.983.020/0001-90</span></div>
+            <div class="row"><span class="label">Nome Fundo:</span><span class="value">XP SELECTION FUNDO DE FUNDOS DE INVESTIMENTO IMOBILIÁRIO</span></div>
+            <div class="row"><span class="label">Tipo Fundo:</span><span class="value">FII</span></div>
+            <div class="row"><span class="label">Condomínio:</span><span class="value">FECHADO</span></div>
+            <div class="row"><span class="label">Público-alvo:</span><span class="value">GERAL</span></div>
+            <div class="row"><span class="label">Gestor Fundo:</span><span class="value">XP VISTA ASSET MANAGEMENT LTDA.</span></div>
+            <div class="row"><span class="label">Custodiante:</span><span class="value">OLIVEIRA TRUST DTVM S.A.</span></div>
+            <div class="row"><span class="label">Patrimônio Líquido (PL):</span><span class="value highlight">R$ 365.918.672,24</span></div>
+            <div class="row"><span class="label">Exercício Social (Fim):</span><span class="value">2024-12-31</span></div>
+        </div>
+
+        <!-- Bloco do Fundo 2 -->
+        <div class="card">
+            <div class="card-title">🏢 TG REAL ESTATE FII</div>
+            <div class="row"><span class="label">CNPJ Fundo:</span><span class="value">44.625.562/0001-04</span></div>
+            <div class="row"><span class="label">Nome Fundo:</span><span class="value">FUNDO DE INVESTIMENTO IMOBILIARIO TG REAL ESTATE</span></div>
+            <div class="row"><span class="label">Tipo Fundo:</span><span class="value">FII</span></div>
+            <div class="row"><span class="label">Condomínio:</span><span class="value">FECHADO</span></div>
+            <div class="row"><span class="label">Público-alvo:</span><span class="value">QUALIFICADO</span></div>
+            <div class="row"><span class="label">Gestor Fundo:</span><span class="value">TG CORE ASSET LTDA</span></div>
+            <div class="row"><span class="label">Custodiante:</span><span class="value">OLIVEIRA TRUST DTVM S.A.</span></div>
+            <div class="row"><span class="label">Patrimônio Líquido (PL Máx):</span><span class="value highlight">R$ 1.374.569.162,60</span></div>
+            <div class="row"><span class="label">Exercício Social (Fim):</span><span class="value">2024-12-31</span></div>
+        </div>
+    </div>
+</body>
+</html>
